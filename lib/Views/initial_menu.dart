@@ -7,21 +7,18 @@ class InitialMenu extends StatelessWidget {
     super.key
   });
 
-  obtainCameras() async {
-    final cameras = await availableCameras();
-    return cameras;
-  }
-
   @override
   Widget build(BuildContext context) {
-    final firstCamera = obtainCameras();
-
+    
     return Scaffold(
       body: Center(
         child: ElevatedButton(
-          onPressed: () {
-            // goToTakePictureScreen(context, CameraArgs(camera: firstCamera));
-            print("------------------------------------------- Estas son las cámaras: $firstCamera");
+          onPressed: () async {
+            final cameras = await availableCameras();
+            final firstCamera = cameras.first;
+
+            goToTakePictureScreen(context, CameraArgs(camera: firstCamera));
+            // print("------------------------------------------- Estas son las cámaras: $firstCamera");
           },
           child: const Text("Take picture"),
         ),
