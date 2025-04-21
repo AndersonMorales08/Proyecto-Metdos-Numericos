@@ -1,4 +1,4 @@
-# Laboratory 1 - Architectural Design
+<center># Laboratory 1 - Architectural Design</center>
 
 ## Anderson David Morales Chila
 
