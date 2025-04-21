@@ -21,5 +21,8 @@ Universidad Nacional de Colombia
 **3. Eliminar notas de las asignaturas del estudiante:** al lado de cada calificación, hay un enlace que está nombrado como "Eliminar". Al oprimir el enlace, el sistema hará una petición a la base de datos para eliminar ese registro. Luego, la interfaz se recargará y dejará de mostrar esa entrada de la base de datos.
 
 ### Propiedades de calidad
-**4. ** 
+**4. Rendimiento:** el sistema debe dar respuesta de manera rapida a las peticiones de añadir o eliminar las calificaciones del estudiante.
+
+**5. Disponibilidad:** el sistema debe estar operativo y accesible para los estudiantes y profesores, para que puedan subir, eliminar y ver las notas.
+
 ---
